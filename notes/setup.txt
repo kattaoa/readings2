@@ -1,0 +1,93 @@
+Last login: Wed Jan  1 11:56:59 on ttys002
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+(base) Omkars-MacBook-Pro-2:~ omkarkatta$ cd Desktop
+(base) Omkars-MacBook-Pro-2:Desktop omkarkatta$ mkdir readings
+(base) Omkars-MacBook-Pro-2:Desktop omkarkatta$ cd readings/
+(base) Omkars-MacBook-Pro-2:readings omkarkatta$ git init
+Initialized empty Git repository in /Users/omkarkatta/Desktop/readings/.git/
+(base) Omkars-MacBook-Pro-2:readings omkarkatta$ git checkout --orphan gh-pages
+Switched to a new branch 'gh-pages'
+(base) Omkars-MacBook-Pro-2:readings omkarkatta$ jekyll new .
+Running bundle install in /Users/omkarkatta/Desktop/readings... 
+  Bundler: Fetching gem metadata from https://rubygems.org/...........
+  Bundler: Fetching gem metadata from https://rubygems.org/.
+  Bundler: Resolving dependencies...
+  Bundler: Using public_suffix 4.0.2
+  Bundler: Using addressable 2.7.0
+  Bundler: Using bundler 2.1.2
+  Bundler: Using colorator 1.1.0
+  Bundler: Using concurrent-ruby 1.1.5
+  Bundler: Using eventmachine 1.2.7
+  Bundler: Using http_parser.rb 0.6.0
+  Bundler: Using em-websocket 0.5.1
+  Bundler: Using ffi 1.11.3
+  Bundler: Using forwardable-extended 2.6.0
+  Bundler: Using i18n 1.7.0
+  Bundler: Using sassc 2.2.1
+  Bundler: Using jekyll-sass-converter 2.0.1
+  Bundler: Using rb-fsevent 0.10.3
+  Bundler: Using rb-inotify 0.10.1
+  Bundler: Using listen 3.2.1
+  Bundler: Using jekyll-watch 2.2.1
+  Bundler: Using kramdown 2.1.0
+  Bundler: Using kramdown-parser-gfm 1.1.0
+  Bundler: Using liquid 4.0.3
+  Bundler: Using mercenary 0.3.6
+  Bundler: Using pathutil 0.16.2
+  Bundler: Using rouge 3.14.0
+  Bundler: Using safe_yaml 1.0.5
+  Bundler: Using unicode-display_width 1.6.0
+  Bundler: Using terminal-table 1.8.0
+  Bundler: Using jekyll 4.0.0
+  Bundler: Using jekyll-feed 0.13.0
+  Bundler: Using jekyll-seo-tag 2.6.1
+  Bundler: Using minima 2.5.1
+  Bundler: Bundle complete! 6 Gemfile dependencies, 30 gems now installed.
+  Bundler: Use `bundle info [gemname]` to see where a bundled gem is installed.
+New jekyll site installed in /Users/omkarkatta/Desktop/readings. 
+(base) Omkars-MacBook-Pro-2:readings omkarkatta$ nano Gemfile
+(base) Omkars-MacBook-Pro-2:readings omkarkatta$ git remote add origin https://github.com/kattaoa/readings.git
+(base) Omkars-MacBook-Pro-2:readings omkarkatta$ git status
+On branch gh-pages
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.gitignore
+	404.html
+	Gemfile
+	Gemfile.lock
+	_config.yml
+	_posts/
+	about.markdown
+	index.markdown
+
+nothing added to commit but untracked files present (use "git add" to track)
+(base) Omkars-MacBook-Pro-2:readings omkarkatta$ git add .
+(base) Omkars-MacBook-Pro-2:readings omkarkatta$ git commit -m "initial commit"
+[gh-pages (root-commit) e530ff2] initial commit
+ 8 files changed, 252 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 404.html
+ create mode 100644 Gemfile
+ create mode 100644 Gemfile.lock
+ create mode 100644 _config.yml
+ create mode 100644 _posts/2020-01-01-welcome-to-jekyll.markdown
+ create mode 100644 about.markdown
+ create mode 100644 index.markdown
+(base) Omkars-MacBook-Pro-2:readings omkarkatta$ git push -u origin gh-pages
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (11/11), 4.35 KiB | 4.35 MiB/s, done.
+Total 11 (delta 0), reused 0 (delta 0)
+To https://github.com/kattaoa/readings.git
+ * [new branch]      gh-pages -> gh-pages
+Branch 'gh-pages' set up to track remote branch 'gh-pages' from 'origin'.
+(base) Omkars-MacBook-Pro-2:readings omkarkatta$ 
